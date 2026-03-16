@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="icon" type="image/png" href="../IMAGES/shopLogo.png">
+
+        <link rel="stylesheet" href="../CSS/optics.css">
+        <link rel="stylesheet" href="../CSS/addcustomer.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+
+             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../IMAGES/shopLogo.png" alt="Nishta_Optics" height="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../HTML/index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person-add text-light ms-2 fs-4 me-2"></i>Customers</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-cart-check-fill text light ms-2 fs-4 me-2"></i>Orders</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-newspaper ms-2 fs-4 me-2"></i>Prescriptions</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-currency-rupee ms-2 fs-4 me-2"></i>Billing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bag-plus ms-2 fs-4 me-2"></i>
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Frames</a></li>
+                        <li><a class="dropdown-item" href="#">Lenses</a></li>
+                        <li><a class="dropdown-item" href="#">sunglasess</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Reports</a></li>
+                    </ul>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex align-items-center ms-5">
+                    <button class="btn btn-outline-danger" type="submit">Logout</button>
+                    <i class="bi bi-person-circle profile-icon text-light ms-3 fs-4"></i>
+                </form>
+                </div>
+            </div>
+            </nav>
+        </header>
+        <main>
+             <!-- Left Aside -->
+                <div class="col-md-2  bg-light">
+                    <div class="sidebar bg-dark text-light p-3">
+
+                    <h5 class="text-info">Quick Actions</h5>
+                    <ul class="nav flex-column mb-4">
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-person-plus me-2"></i> New Customer
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-eyeglasses me-2"></i> New Prescription
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-cart-plus me-2"></i> New Order
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-receipt me-2"></i> Generate Invoice
+                    </a>
+                    </li>
+
+                    </ul>
+
+
+                    <h5 class="text-info">Products</h5>
+                    <ul class="nav flex-column mb-4">
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-eyeglasses me-2"></i> Frames
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-circle me-2"></i> Lenses
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-dot me-2"></i> Contact Lenses
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-box me-2"></i> Accessories
+                    </a>
+                    </li>
+
+                    </ul>
+
+
+                    <h5 class="text-info">Shop Status</h5>
+                    <ul class="nav flex-column">
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-clock me-2"></i> Today's Orders
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-hourglass-split me-2"></i> Pending Orders
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">
+                    <i class="bi bi-exclamation-triangle me-2"></i> Low Stock Items
+                    </a>
+                    </li>
+
+                    </ul>
+
+                    </div>
+
+
+
+                
+                </div>
+                <!-- Left Aside End-->
+
+
+                <!-- main Content -->
+
+                <!-- MAIN SECTION -->
+            <div class="main-section col-md-8 p-1">
+
+            <h2 class="page-title">Add Customer</h2>
+
+
+            <!-- SEARCH CUSTOMER -->
+
+            <div class="search-box">
+
+            <label>Search Existing Customer</label>
+
+            <input type="text" placeholder="Enter name or phone">
+
+            <button class="search-btn">Search</button>
+
+            </div>
+
+
+
+            <!-- CUSTOMER FORM -->
+
+            <div class="customer-form">
+
+            <h3>Customer Information</h3>
+
+            <div class="form-grid">
+
+            <div class="form-group">
+            <label>Customer ID</label>
+            <input type="text" value="CUST1025" readonly>
+            </div>
+
+            <div class="form-group">
+            <label>Full Name</label>
+            <input type="text">
+            </div>
+
+            <div class="form-group">
+            <label>Gender</label>
+            <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date">
+            </div>
+
+            <div class="form-group">
+            <label>Phone</label>
+            <input type="text">
+            </div>
+
+            <div class="form-group">
+            <label>Email</label>
+            <input type="email">
+            </div>
+
+            <div class="form-group">
+            <label>Eye Test Date</label>
+            <input type="date">
+            </div>
+
+            </div>
+
+
+
+            <h3>Prescription</h3>
+
+            <div class="prescription-grid">
+
+            <div class="form-group">
+            <label>Left Eye</label>
+            <input type="text">
+            </div>
+
+            <div class="form-group">
+            <label>Right Eye</label>
+            <input type="text">
+            </div>
+
+            <div class="form-group">
+            <label>Cylinder</label>
+            <input type="text">
+            </div>
+
+            <div class="form-group">
+            <label>Axis</label>
+            <input type="text">
+            </div>
+
+            </div>
+
+
+
+            <h3>Address</h3>
+
+            <div class="form-grid">
+
+            <div class="form-group">
+            <label>City</label>
+            <input type="text">
+            </div>
+
+            <div class="form-group">
+            <label>State</label>
+            <input type="text">
+            </div>
+
+            <div class="form-group">
+            <label>Pincode</label>
+            <input type="text">
+            </div>
+
+            </div>
+
+
+
+            <h3>Notes</h3>
+
+            <textarea placeholder="Enter notes"></textarea>
+
+
+
+            <div class="form-buttons">
+
+            <button class="save-btn">Save Customer</button>
+
+            <button class="cancel-btn">Cancel</button>
+
+            </div>
+
+            </div>
+
+
+
+            <!-- PREVIOUS ORDERS -->
+
+            <div class="previous-orders">
+
+            <h3>Previous Orders</h3>
+
+            <table>
+
+            <tr>
+            <th>Order ID</th>
+            <th>Product</th>
+            <th>Date</th>
+            <th>Status</th>
+            </tr>
+
+            <tr>
+            <td>#1021</td>
+            <td>Frame</td>
+            <td>10 Mar</td>
+            <td class="status-delivered">Delivered</td>
+            </tr>
+
+            <tr>
+            <td>#1022</td>
+            <td>Contact Lens</td>
+            <td>12 Mar</td>
+            <td class="status-pending">Pending</td>
+            </tr>
+
+            </table>
+
+            </div>
+
+            </div>
+
+
+
+
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
